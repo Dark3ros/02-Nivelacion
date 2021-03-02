@@ -5,3 +5,5 @@ Funciones Fechas.
 Destructuracion.
 Callbacks Basico.
 Callbacks Hell.
+Promesas
+Asyc - Await

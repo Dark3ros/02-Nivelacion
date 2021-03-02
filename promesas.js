@@ -60,7 +60,7 @@ const getSueldoById = (id) => {
     });
 }
 
-const id = 1;
+const id = 4;
 let nombre;
 let apellido;
 
@@ -68,11 +68,9 @@ getEmpleadoById(id)
     .then( empleado => {
         nombre = empleado.nombre;
         apellido = empleado.apellido;
-        return getEmpleadoById(id);
+        return getSueldoById(id);
     })
     
-    .then( sueldo => {
-
-       console.log(`El empleado con Id: ${id} es ${nombre} ${apellido} y Tiene un Sueldo de: ${sueldo.sueldo}`);
-    })
+    .then( sueldo => console.log(`El empleado con Id: ${id} es ${nombre} ${apellido} y Tiene un Sueldo de: ${sueldo.sueldo}`))
+    
     .catch(Error => console.log(Error));
